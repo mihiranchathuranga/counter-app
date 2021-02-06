@@ -12,7 +12,7 @@ class  Counter extends Component {
     render() { 
         return (
             <div>
-             <span>{this.state.count}</span>
+             <span>{this.formatCount()}</span>
              <button>Increment</button>
             </div>
         )
