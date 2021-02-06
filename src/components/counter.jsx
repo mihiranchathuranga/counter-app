@@ -17,7 +17,13 @@ class  Counter extends Component {
             </div>
         )
                 }
-        }
+
+ 
+formatCount(){
+    return this.state.count === 0 ? 'Zero' : this.state.count;
+}
+
+}
  
 //exporting the Counter
 export default Counter ;
