@@ -14,6 +14,7 @@ class  Counter extends Component {
     
     //how to add img to div
     //set the button color change.how to do it
+    //reacts want to identify all items in list uniquely
     render() { 
        // let classes = this.getBadgeClasses();
         return (
@@ -22,7 +23,7 @@ class  Counter extends Component {
              <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
              <button className="btn btn-secondary btn-sm">Increment</button>
              <ul>
-               {this.state.tags.map(tag => <li>{tag}</li>)}
+               {this.state.tags.map(tag => <li key={tag}>{tag}</li>)}
              </ul>
             </div>
         )
