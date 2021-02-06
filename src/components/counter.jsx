@@ -15,11 +15,11 @@ class  Counter extends Component {
     //how to add img to div
     //set the button color change.how to do it
     render() { 
-        let classes = this.getBadgeClasses();
+       // let classes = this.getBadgeClasses();
         return (
             <div>
               
-             <span className={classes}>{this.formatCount()}</span>
+             <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
              <button className="btn btn-secondary btn-sm">Increment</button>
             </div>
         )
