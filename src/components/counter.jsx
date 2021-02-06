@@ -9,12 +9,9 @@ class  Counter extends Component {
         count: 0,
         tags: ['tag1','tag2','tag3']       
        };
-    //we can use this way to apply styles
-   
-    
-    //how to add img to div
-    //set the button color change.how to do it
-    //reacts want to identify all items in list uniquely
+    renderTags(){
+        if(this.state.tags.length === 0) return<p>There are no tags!</p>;
+    }
     render() { 
        // let classes = this.getBadgeClasses();
         return (
