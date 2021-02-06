@@ -15,8 +15,7 @@ class  Counter extends Component {
     //how to add img to div
     //set the button color change.how to do it
     render() { 
-        let classes = "badge m-2 badge-";
-        classes += (this.state.count === 0) ? "warning" : "primary";
+        let classes = this.getBadgeClasses();
         return (
             <div>
               
@@ -27,6 +26,12 @@ class  Counter extends Component {
                 }
 
  
+    getBadgeClasses() {
+        let classes = "badge m-2 badge-";
+        classes += (this.state.count === 0) ? "warning" : "primary";
+        return classes;
+    }
+
 formatCount(){
     //object destrcturing
     const { count } = this.state;
