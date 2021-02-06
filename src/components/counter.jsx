@@ -14,7 +14,7 @@ class  Counter extends Component {
     render() { 
         return (
             <div>
-                <img src="" alt=""/>
+                <img src={this.state.imageUrl} alt=""/>
              <span>{this.formatCount()}</span>
              <button>Increment</button>
             </div>
