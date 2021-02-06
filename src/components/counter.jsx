@@ -7,6 +7,7 @@ class  Counter extends Component {
     //define imageUrl
     state = {
         count: 0,
+        tags: ['tag1','tag2','tag3']
        
        };
     //we can use this way to apply styles
