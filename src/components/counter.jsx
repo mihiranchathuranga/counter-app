@@ -4,14 +4,17 @@ import React, { Component } from 'react';
 class  Counter extends Component {
 
     //define the state which contains with required data for component
+    //define imageUrl
     state = {
         count: 0,
+        imageUrl: 'https://picsum.photos/200'
        };
     
-    
+    //how to add img to div
     render() { 
         return (
             <div>
+                <img src="" alt=""/>
              <span>{this.formatCount()}</span>
              <button>Increment</button>
             </div>
